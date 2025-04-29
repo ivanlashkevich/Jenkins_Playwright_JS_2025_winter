@@ -6,6 +6,7 @@ test-results/
 playwright-report/
 blob-report/
 playwright/.cache/
+LoginAuthCQ.json
 
 # Allure results and reports
 allure-results/
