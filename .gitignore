@@ -13,7 +13,6 @@ allure-report/
 
 # Ignore environment files (sensitive credentials)
 .env
-.env.*
 
 # VSCode settings
 .vscode/
