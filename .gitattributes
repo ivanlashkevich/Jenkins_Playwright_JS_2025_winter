@@ -1,0 +1,10 @@
+# Normalize all text files for cross-platform compatibility
+* text=auto
+
+# Ensure shell scripts work on Unix/Linux
+*.sh text eol=lf
+
+# Make sure JS/TS/JSON files use LF to prevent Windows CRLF issues
+*.js text eol=lf
+*.ts text eol=lf
+*.json text eol=lf
