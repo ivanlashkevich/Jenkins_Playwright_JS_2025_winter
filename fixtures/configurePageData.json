@@ -1,0 +1,24 @@
+{
+    "tooltipElement": {
+        "title": "Help for feature: Display Name",
+        "text": "If set, the optional display name is shown for the project throughout the Jenkins web GUI. As it is for display purposes only, the display name is not required to be unique amongst projects. If the display name is not set, the Jenkins web GUI will default to showing the project name."
+    },
+    "propertiesOfFolder": {
+        "repositoryURL": "https://github.com/RedRoverSchool/JenkinsQA_JS_2024_fall.git"
+    },
+    "organizationFolderConfiguration": {
+        "repositoryURL": "https://github.com/ivanlashkevich/JenkinsQA_JS_2024_fall.git"
+    },
+    "publisherWhiteList": ["Aggregate downstream test results",
+                           "Archive the artifacts",
+                           "Build other projects",
+                           "Publish JUnit test result report",
+                           "Record fingerprints of files to track usage",
+                           "Git Publisher",
+                           "E-mail Notification",
+                           "Editable Email Notification",
+                           "Set GitHub commit status (universal)",
+                           "Set build status on GitHub commit [deprecated]",
+                           "Delete workspace when build is done"]
+    
+}

@@ -1,0 +1,17 @@
+{
+    "projectName": "Project Name",
+    "projectNameInvalid": "New<>Name",
+    "errorMessageColor": "rgb(230, 0, 31)",
+    "folderName": "Folder",
+    "newInstance": ["Freestyle project",
+                     "Pipeline",
+                    "Multi-configuration project",
+                    "Folder",
+                    "Multibranch Pipeline", 
+                    "Organization Folder"],
+    "projectNameSpecialSymbols": "!@#$%^&*|:?><][;/",
+    "projectNameSpecialSymbolDot" : ".",
+    "simpleProjectXml": "<?xml version='1.1' encoding='UTF-8'?>\n<project>\n  <actions/>\n  <description>A simple freestyle project</description>\n  <keepDependencies>false</keepDependencies>\n  <properties/>\n  <scm class=\"hudson.scm.NullSCM\"/>\n  <builders/>\n  <publishers/>\n  <buildWrappers/>\n</project>",
+    "getCrumbEndpoint": "/crumbIssuer/api/json",
+    "createNewItemEndpoint": "/createItem?name="
+}

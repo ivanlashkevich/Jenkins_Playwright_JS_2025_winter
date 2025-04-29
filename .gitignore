@@ -1,0 +1,46 @@
+# Node.js dependencies
+node_modules/
+
+# Playwright test results
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
+
+# Allure results and reports
+allure-results/
+allure-report/
+
+# Ignore environment files (sensitive credentials)
+.env
+.env.*
+
+# VSCode settings
+.vscode/
+
+# IntelliJ IDEA project files
+.idea/
+
+# macOS system files
+.DS_Store
+playwright/.DS_Store
+
+# System generated files
+Thumbs.db
+
+# Jenkins related files
+jenkins_home/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Optional: Coverage reports (if you later add code coverage)
+coverage/
+
+# Optional: If you generate custom reports
+reports/
+mochawesomeReports/

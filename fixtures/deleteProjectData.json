@@ -1,0 +1,11 @@
+{
+    "confirmationMessage": {
+        "title": "Delete Project",
+        "question": "Delete the Project"
+    },
+
+    "confirmationMessage_1": {
+        "title": "Delete Organization Folder",
+        "question": "Delete the Organization Folder"
+    }
+}
