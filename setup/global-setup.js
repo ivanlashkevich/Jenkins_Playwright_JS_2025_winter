@@ -1,4 +1,4 @@
-import { expect, chromium } from "@playwright/test";
+import { expect, chromium } from '@playwright/test';
 
 async function globalSetup() {
   const browser = await chromium.launch({

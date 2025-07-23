@@ -1,4 +1,4 @@
-import DashboardPage from "./DashboardPage";
+import DashboardPage from './DashboardPage';
 
 class ManageJenkinsPage extends DashboardPage {
 

@@ -1,4 +1,4 @@
-import { test, expect } from "../setup/globalHooks";
+import { test, expect } from '../setup/globalHooks';
 
 test.beforeEach(async ({dashboardPage, newJobPage, folderPage, project}) => {
     await test.step('Creating a folder and a subfolder', async () => {

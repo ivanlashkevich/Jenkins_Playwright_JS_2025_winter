@@ -1,4 +1,4 @@
-import ManageJenkinsPage from "./ManageJenkinsPage";
+import ManageJenkinsPage from './ManageJenkinsPage';
 
 class SecurityUsersPage extends ManageJenkinsPage {
 

@@ -1,4 +1,4 @@
-import SecurityUsersPage from "./SecurityUsersPage";
+import SecurityUsersPage from './SecurityUsersPage';
 
 class AddUserPage extends SecurityUsersPage {
 

@@ -1,4 +1,4 @@
-import DashboardPage from "../pageObjects/DashboardPage";
+import DashboardPage from '../pageObjects/DashboardPage';
 
 class MyViewsPage extends DashboardPage {
 

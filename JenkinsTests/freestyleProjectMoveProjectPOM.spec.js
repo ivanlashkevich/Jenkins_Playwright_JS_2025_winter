@@ -1,4 +1,4 @@
-import { test, expect } from "../setup/globalHooks";
+import { test, expect } from '../setup/globalHooks';
 
 let encodedProjectName, encodedFolderName, pageURL;
 
