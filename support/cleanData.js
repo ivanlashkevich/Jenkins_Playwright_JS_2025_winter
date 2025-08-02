@@ -1,12 +1,10 @@
-// require('dotenv').config();
 import dotenv from 'dotenv';
 dotenv.config();
-import fetch from 'node-fetch';
 
 const JENKINS_HOST = process.env.LOCAL_HOST || 'localhost';
 const JENKINS_PORT = process.env.LOCAL_PORT || 8080;
 const JENKINS_USER = process.env.LOCAL_ADMIN_USERNAME || 'admin';
-const JENKINS_API_TOKEN = process.env.LOCAL_ADMIN_TOKEN || '11395fa6381eca4a1b79184bb05c49c7e0';
+const JENKINS_API_TOKEN = process.env.LOCAL_ADMIN_TOKEN;
 
 async function getJenkinsCrumb() {
     const crumbUrl = `http://${JENKINS_HOST}:${JENKINS_PORT}/crumbIssuer/api/json`;
