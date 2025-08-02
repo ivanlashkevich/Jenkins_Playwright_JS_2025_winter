@@ -3,26 +3,18 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test:e2e": "npx playwright test tests/",
-    "test:e2e:all": "npx playwright test tests --project=all-browsers-and-tests",
-    "test:e2e:ci": "CI=1 npx playwright test --project=ci --shard=$CI_NODE_INDEX/$CI_NODE_TOTAL",
-    "test:e2e:dev": "npx playwright test tests-examples/ --project=chromium --headed --retries=0 --reporter=line",
-    "test:e2e:smoke": "npx playwright test tests-examples/ --grep @smoke --project=chromium",
-    "test:e2e:non-smoke": "npx playwright test tests-examples/ --grep-invert @smoke --project=firefox",
     "test:jenkins": "npx playwright test JenkinsTests",
     "test:old": "npx playwright test oldTests",
     "test:jenkins:allure": "npx playwright test JenkinsTests --reporter=html,allure-playwright",
     "test:old:allure": "npx playwright test oldTests --reporter=html,allure-playwright",
-    "clean:allure": "rd /s /q allure-results && rd /s /q allure-report",
-    "report:allure": "allure generate allure-results --clean -o allure-report && allure open allure-report"
-    
+    "report:allure": "allure generate allure-results --clean -o allure-report && allure open allure-report",
+    "clean:allure": "rd /s /q allure-results && rd /s /q allure-report"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "@applitools/eyes-playwright": "^1.34.1",
     "@faker-js/faker": "^9.3.0",
     "@playwright/test": "^1.49.1",
     "@types/node": "^22.10.5",
