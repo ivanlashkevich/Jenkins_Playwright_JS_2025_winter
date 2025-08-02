@@ -1,7 +1,5 @@
 // @ts-check
 import { defineConfig, devices } from '@playwright/test';
-// const { defineConfig, devices, } = require('@playwright/test');
-// const baseEnvUrl = require('./utils/environmentBaseUrl');
 
 /**
  * Read environment variables from file.
@@ -9,13 +7,8 @@ import { defineConfig, devices } from '@playwright/test';
  */
 import dotenv from 'dotenv';
 dotenv.config();
-// require('dotenv').config();
 
-/**
- * See https://playwright.dev/docs/test-configuration.
- */
 export default defineConfig({
-// module.exports = defineConfig({
   globalSetup: "./setup/global-setup",
   // testDir: './tests',
 
@@ -54,7 +47,6 @@ export default defineConfig({
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */
-    // baseURL: 'http://127.0.0.1:3000',
     baseURL: 'http://localhost:8080',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
@@ -67,13 +59,6 @@ export default defineConfig({
     // video: 'on-first-retry',
   },
     timeout: 15000, //https://playwright.dev/docs/test-timeouts
-    // expect: {
-      /**
-       * Maximum time expect() should wait for the condition to be met.
-       * For example in `await expect(locator).toHaveText();`
-       */
-      // timeout: 10000,
-    // },
 
   /* Folder for test artifacts such as screenshots, videos, traces, etc. */
   // outputDir: 'test-results/',
@@ -97,78 +82,5 @@ export default defineConfig({
     //   name: 'webkit',
     //   use: { ...devices['Desktop Safari'] },
     // },
-
-    // {
-    //   name: 'all-browsers-and-tests',
-    //   use: { 
-    //     baseURL: 'https://playwright.dev/',
-    //      ...devices['Desktop Chrome']
-    //   },
-    // },
-
-    // {
-    //   name: 'all-browsers-and-tests',
-    //   use: { 
-    //     baseURL: 'https://playwright.dev/',
-    //      ...devices['Desktop Safari']
-    //   },
-    // },
-
-    // {
-    //   name: 'all-browsers-and-tests',
-    //   use: { 
-    //     baseURL: 'https://playwright.dev/',
-    //      ...devices['Desktop Firefox']
-    //   },
-    // },
-
-    // Example only
-    // {
-    //   name: 'local',
-    //   use: { 
-    //     baseURL: baseEnvUrl.local.home,
-    //   },
-    // },
-
-    // Example only
-    // {
-    //   name: 'ci',
-    //   use: { 
-    //      baseURL: process.env.CI
-    //       ? baseEnvUrl.ci.prefix + process.env.GITHUB_REF_NAME + baseEnvUrl.ci.suffix //https://dev-myapp-chapter-2.mydomain.com
-    //       : baseEnvUrl.staging.home,
-    //   },
-      /**
-       * GitHub variables: https://docs.github.com/en/actions/learn-github-actions/variables
-       * GitLab variables: https://docs.gitlab.com/ee/ci/variables/predefined_variables.html#predefined-variables-reference
-       */
-    // },
-
-    /* Test against mobile viewports. */
-    // {
-    //   name: 'Mobile Chrome',
-    //   use: { ...devices['Pixel 5'] },
-    // },
-    // {
-    //   name: 'Mobile Safari',
-    //   use: { ...devices['iPhone 12'] },
-    // },
-
-    /* Test against branded browsers. */
-    // {
-    //   name: 'Microsoft Edge',
-    //   use: { ...devices['Desktop Edge'], channel: 'msedge' },
-    // },
-    // {
-    //   name: 'Google Chrome',
-    //   use: { ..devices['Desktop Chrome'], channel: 'chrome' },
-    // },
   ],
-
-  /* Run your local dev server before starting the tests */
-  // webServer: {
-  //   command: 'npm run start',
-  //   url: 'http://127.0.0.1:3000',
-  //   reuseExistingServer: !process.env.CI,
-  // },
 });
